@@ -141,7 +141,6 @@ def iptracker():
             responseData = response.read().decode('utf-8')
             ipInfo = json.loads(responseData)
 
-            os.system('cls' if os.name == 'nt' else 'clear')
 
             
             time.sleep(2)
@@ -171,7 +170,7 @@ def iptracker():
                 timezone=ipInfo['timezone']
             )
             time.sleep(2)
-            os.system('cls' if os.name == 'nt' else 'clear')
+            
 
             print(" ")
             print(" ")
